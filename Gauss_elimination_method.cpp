@@ -25,7 +25,7 @@ int main()
     }
     }
 
-    for(i=0;i<n;i++)//for loop for indices
+    for(i=0;i<n;i++)//for loop for indices value
     {
         for(j=i+1;j<n;j++)
         {
