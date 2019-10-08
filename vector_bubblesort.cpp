@@ -40,8 +40,8 @@ int main()
 	int swapping=1;
 		while(swapping==1)
 		{
-			swapping=0;
-			for(int a=0;a<n;a++)
+			swapping=0; // swap variable declared
+			for(int a=0;a<n7;a++)
 			{
 				if(dir==0)
 				{
