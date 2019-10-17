@@ -13,24 +13,23 @@
 #define	L		1024
 #define	TRUE	1U
 #define	FALSE	0U
-
 /*
- * struct and typedef declarations
+ * queue and typedef declarations
 */
-struct	stack_struct
+struct	q_struct
 {
 	int		data[L];
 	size_t 	head;
 	size_t  tail;
 };
-typedef struct stack_struct	stack_t;
+typedef struct q_struct	queue_t;
 typedef unsigned short int	bool_t;
 
 /* *************** FUNCTIONS ***************** */
 /*
  * stack_empty() implementation
  */
-bool_t	queue_empty(stack_t* s)
+bool_t	queue_empty(queue_t* s)
 {
 	if ((s -> head) == (s -> tail))
 	{
@@ -45,7 +44,7 @@ bool_t	queue_empty(stack_t* s)
 /*
  * push() implementation
  */
-void enqueue(stack_t* s, int x)
+void enqueue(queue_t* s, int x)
 {
 
 	s -> data[ (s->tail)] = x;
@@ -63,7 +62,7 @@ void enqueue(stack_t* s, int x)
 /*
  * pop() implementation
  */
-int dequeue(stack_t* s)
+int dequeue(queue_t* s)
 {
 
 		int mdata= s->data[s->head];
@@ -82,9 +81,9 @@ int dequeue(stack_t* s)
 int main()
 {
 	/* declare and initialize variables */
-	stack_t	stack;
-	stack.tail=0;
-	stack.head = stack.tail;
+	queue_t	queue;
+	queue.tail=0;
+	queue.head = queue.tail;
 
 
 	int loadarr[10] = {52, -29, 36, 1154, 72,
@@ -95,20 +94,20 @@ int main()
 	for (i=0; i != 10; ++i)
 	{
 		//printf("stack.q_tail = %zu, ", stack.q_tail);
-		enqueue(&stack, loadarr[i]);
+		enqueue(&queue, loadarr[i]);
 		printf("enqueue %d\n", loadarr[i]);
 	}
 
 	/* pop stack */
 	int x;
-	while (queue_empty(&stack) == FALSE)
+	while (queue_empty(&queue) == FALSE)
 	{
 		//printf("stack.q_head = %zu, ", stack.q_tail);
-		x = dequeue(&stack);
+		x = dequeue(&queue);
 		printf("dequeue %d\n", x);
 	}
 	/* test error function */
-	x = dequeue(&stack); /* comment this out to avoid error */
+	x = dequeue(&queue); /* comment this out to avoid error */
 
 	return 0;
 }
