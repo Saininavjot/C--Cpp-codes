@@ -27,7 +27,7 @@ scanf("%d",&dir);
  	}
  return(0);
 }
-void bubblesort(int *set, int ns,int direction)
+void bubblesort(int *set, int ns,int direction) // function to sort numbers 
 {
 	int swapping=1;
 
