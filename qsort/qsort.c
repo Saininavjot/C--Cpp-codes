@@ -3,6 +3,7 @@
  *
  *  Created on: Oct. 28, 2019
  *      Author: user
+ program to implement quick sorting
  */
 
 
