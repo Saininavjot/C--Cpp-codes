@@ -2,7 +2,8 @@
 #include<iostream>
 #include<math.h>
 using namespace std;
-int main()
+int main() // main function
+
 {
     int i,j,k,n;//variable declared
 
