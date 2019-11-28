@@ -1,0 +1,48 @@
+#include<iostream>  //Header file for cin & cout
+#include<cmath>  //Header file for mathematical operations
+#include<iomanip> //Header file for precision
+using namespace std;  //calling the standard directory
+float f(float(x),float(y))
+{
+return (1+ y + pow(x,2)); // given dy/dx
+}
+int main()
+{
+int n,i,j; // number of iterations
+float h;  // step size
+cout<<"To solve a differential equation by Fourth Order Runge-Kutta's Method"<<endl;
+cout<<"Given equation is dy/dx = 1 + y + x^2 "<<endl;
+//Entering the Number of Iterations
+cout<<"Enter the number of solutions "<<endl;
+cin>>n;
+//Enter step size
+cout<<"Enter The Value of Step Size "<<endl;
+cin>>h;
+long double y[n],x[n],k[n][n];
+cout<<"Enter the value of x0 "<<endl;
+cin>>x[0]; //enter initial value of x
+cout<<"Enter The Value of y0 "<<endl;
+cin>>y[0]; //enter initial value of y
+for(i=1;i<=n;i++)
+ {
+ x[i]=x[i-1]+h; //Calculating the value of x
+ }
+
+cout<<"Solution of the given differential equation by Fourth Order Runga Kutta Method is "<<endl;
+
+for(j=1;j<=n;j++)
+ {
+ k[1][j]=h*f(x[j-1],y[j-1]); //calculating the values of k1
+ cout<<"K[1] = "<<k[1][j]<<"\t";
+ k[2][j]=h*f(x[j-1]+(h/2),y[j-1]+(k[1][j]/2)); //calculating the values of k2
+ cout<<"K[2] = "<<k[2][j]<<"\t";
+ k[3][j]=h*f(x[j-1]+(h/2),y[j-1]+(k[2][j]/2));  //calculating values of k3
+ cout<<"K[3] = "<<k[3][j]<<"\t";
+ k[4][j]=h*f(x[j-1]+h,y[j-1]+k[3][j]); //calculating values of k4
+ cout<<"K[4] = "<<k[4][j]<<"\n";
+ y[j]=y[j-1]+((k[1][j]+2*k[2][j]+2*k[3][j]+k[4][j])/6); //calculating valu of y
+ cout<<"y["<<h*j<<"] = "<<setprecision(5)<<y[j]<<endl;
+ }
+
+return 0;
+}
