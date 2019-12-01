@@ -2,7 +2,7 @@
  * epsilon.cpp
  *
  *  Created on: Sep. 18, 2019
- *      Author: user
+ *      Author: Navjot
  */
 /*
 This code find maximum error of rounding off in computer
