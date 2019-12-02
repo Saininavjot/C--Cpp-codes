@@ -17,7 +17,7 @@
  * largest.c
  *
  *  Created on: Sep 20, 2019
- *      Author: User
+ *      Author: Navjot
  */
 #include "find_lrg.h"
 
