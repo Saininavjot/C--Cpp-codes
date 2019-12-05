@@ -8,7 +8,7 @@
 This code find maximum error of rounding off in computer
 */
 
-#include <iostream> //
+#include <iostream> //include input output stream
 using namespace std;
 
 int main()
