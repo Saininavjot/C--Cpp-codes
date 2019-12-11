@@ -14,7 +14,7 @@
 #define	TRUE	1U
 #define	FALSE	0U
 /*
- * queue and typedef declarations
+ * queue and typedef declarations new
 */
 struct	q_struct
 {
