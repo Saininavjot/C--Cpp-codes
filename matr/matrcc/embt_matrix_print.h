@@ -2,7 +2,7 @@
  * embt_matrix_print.h
  *
  *  Created on: Oct. 22, 2019
- *      Author: user
+ *      Author: Navjot
  */
 
 #ifndef EMBT_MATRIX_PRINT_H_
