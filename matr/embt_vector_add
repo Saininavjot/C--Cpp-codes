@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <gsl/gsl_vector_double.h>
+#include <gsl/gsl_rng.h>
+#include <gsl/gsl_randist.h>
+#ifndef EMBT_VECTOR_ADD_H_
+#define EMBT_VECTOR_ADD_H_
+gsl_vector *embt_vector_add(gsl_vector *u, gsl_vector *v)
+{
+	gsl_vector *sum=gsl_vector_calloc(N);
+	gsl_vector_add(sum,u);
+	gsl_vector_add(sum,v);
+	return sum;
+}
+
+#endif /* EMBT_VECTOR_ADD_H_ */
