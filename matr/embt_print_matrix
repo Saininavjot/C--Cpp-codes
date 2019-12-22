@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+	#include <stdlib.h>
+#include "embt_print_vector.h"
+/*
+ *  includes for GSL components
+ *  	- use double precision
+ */
+	#include <gsl/gsl_vector_double.h>
+	#include <gsl/gsl_matrix_double.h>
+	#include <gsl/gsl_rng.h>
+	#include <gsl/gsl_randist.h>
+
+void *embt_print_matrix(const gsl_vector *U)
+{
+	size_t		N=10;
+printf("Matrix m\n");
+for (size_t i=0;i<N;i++)
+  {
+    for (size_t j=0;j<N;j++)
+	{
+	  printf("%f ",gsl_matrix_get(U,i,j));
+	}
+    printf("\n");
+  }
+}
