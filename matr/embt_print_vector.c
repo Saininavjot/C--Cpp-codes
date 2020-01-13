@@ -2,7 +2,7 @@
  * embt_print_vector.c
  *
  *  Created on: Oct. 22, 2019
- *      Author: user
+ *      Author: navjot
  */
 #include <stdio.h>
 	#include <stdlib.h>
