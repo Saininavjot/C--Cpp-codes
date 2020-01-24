@@ -11,7 +11,7 @@ int main() // main function
     cin>>n;// enter no. of equation
 
     /* if no of equations are n then size
-     *  of augmented matrix will be n*n+1. So here we are declaring 2d array 'mat' of size n+n+1 */
+     *  of augmented matrix will be n*n+1. So here we are declaring 2dimensiol array 'mat' of size n+n+1 */
     float mat[n][n+1];
 
     /* for n equations there will be n unknowns which will be stored in array 'res' */
