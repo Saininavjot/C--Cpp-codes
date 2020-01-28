@@ -2,7 +2,7 @@
  * rem.cpp
  *
  *  Created on: Oct. 20, 2019
- *      Author: user
+ *      Author: navjot
  Reverse a number
  */
     #include <iostream>
