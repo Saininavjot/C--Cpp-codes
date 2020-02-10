@@ -2,7 +2,7 @@
  * find_lrg.h
  *
  *  Created on: Oct 3, 2019
- *      Author: User
+ *      Author: Navjot
  */
 
 #ifndef FIND_LRG_H_
