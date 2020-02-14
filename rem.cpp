@@ -18,7 +18,7 @@
             reversedNumber = reversedNumber*10 + remainder;
             n /= 10;
         }
-        cout << "Reversed Number = " << reversedNumber;
+        cout << "Reversed Number is:" << reversedNumber;
         return 0;
     }
 
