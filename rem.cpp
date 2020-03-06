@@ -3,7 +3,7 @@
  *
  *  Created on: Oct. 20, 2019
  *      Author: navjot
- Reverse a number given
+ Reverse a number entered by user
  */
     #include <iostream>
     using namespace std;
